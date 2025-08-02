@@ -1,0 +1,65 @@
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+build/
+out/
+
+# Visual Studio
+*.sln
+*.vcxproj*
+*.vcproj*
+*.ncb
+*.suo
+*.user
+*.opensdf
+*.sdf
+*.ipch
+*.VC.db
+*.VC.opendb
+
+# CLion
+.idea/
+cmake-build-*/
+*.iml
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# ImGui binaries (если вдруг создашь lib или obj руками)
+*.lib
+*.dll
+*.pdb
+*.exp
+*.obj
+
+# Backup / OS junk
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Conan / vcpkg (если используешь)
+conan.lock
+conanbuild/
+vcpkg_installed/
+vcpkg/buildtrees/
+vcpkg/packages/
+
+# Cache / intermediates
+.cache/
+*.cache
+*.orig
+
+# Your custom build dir, if any
+/bin/
+/lib/
+/dist/
+
+# Optional: example build dirs
+example/*/build/
+example/*/bin/
