@@ -14,9 +14,9 @@ add_executable(ImGuiChezzeAnimatorExampleApp1
 source_group("animation" FILES ${CORE_SRC_FILES})
 source_group("imgui" FILES ${IMGUI_FILES})
 
-target_link_libraries(ImGuiChezzeAnimatorExampleApp1 PRIVATE imgui)
+target_link_libraries(ImGuiChezzeAnimatorExampleApp1 PUBLIC imgui)
 
 target_include_directories(ImGuiChezzeAnimatorExampleApp1 PUBLIC
-    "${CMAKE_SOURCE_DIR}/imgui"
-    "${CMAKE_SOURCE_DIR}/imgui/backends"
+    "${IMGUI_DIR}"
+	"${IMGUI_DIR}/backends"
 )
